@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Rampart+One&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="index.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+      <header>
+          <div class="header">Cel mai tare gioc</div>
+    </header>
+    <div class="set-up">
+      <div class="container"></div>
+    </div>
+    <div class="hints"></div>
+    <div class="wrap">
+
+    <div class="position-color">
+      <div class="position-color-text">Pick a color:</div>
+    <div class="input-padding">
+      <input type="color" id="color" />
+      </div>
+    </div>
+
+    <div class="canvas">
+      <span class="canvas-font">Canvas size:</span>
+      <input
+        class="range"
+        type="range"
+        id="range"
+        onclick="theRange()"
+        min="4"
+        max="100"
+        value="16"
+      />
+      <span class="range-value">16x16</span>
+     </div>
+    </div>
+    <div class="clear-button">
+      <button class="clear" onclick="clearAndRefresh()">Clear</button>
+    </div>
+    <div class="rainbow-button">
+      <button id="rainbow" onclick="rainbowMode(),countClicks()">
+        Rainbow Mode
+      </button>
+    </div>
+</div>
+<footer>
+    <div class="subsol"></div>
+</footer>
+
+    <!-- <button class="btn sixth">Button  -->
+  </body>
+</html>

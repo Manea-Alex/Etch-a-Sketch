@@ -1,7 +1,10 @@
 let grid = document.querySelector(".container");
-console.log(grid);
 let range = document.querySelector(".range");
 let doubleClick = false;
+const rangeValue = document.querySelector(".range-value");
+let colorInput = document.querySelector("#color");
+let color = "black";
+let count = 0;
 
 grid.addEventListener("dblclick", function (ev) {
   doubleClick = !doubleClick;
@@ -13,18 +16,8 @@ function theRange() {
   rangeValue.innerHTML = `${range.value}x${range.value}`;
   makeGrid(range.value);
 }
-const rangeValue = document.querySelector(".range-value");
-
-let colorInput = document.querySelector("#color");
-
-let color = "black";
-let count = 0;
 function changeText(value) {
   rangeValue.innerHTML = `${value} x ${value}`;
-}
-
-function countClicks() {
-  count++;
 }
 
 let rainbowButton = document.querySelector("#rainbow");
@@ -85,4 +78,4 @@ function makeGrid(gridSize) {
     grid.appendChild(cell);
   }
 }
-makeGrid(25);
+makeGrid(16);
